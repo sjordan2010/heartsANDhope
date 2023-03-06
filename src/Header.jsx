@@ -1,34 +1,37 @@
 import React from 'react'
+import { Button } from '@mui/material';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import { Link } from "react-router-dom";
 
 
 function Header() {
-    const headerLinks = []
 
   return (
+    <header>
+        <div className='pageTop'>
+            <img src="#" alt="logo" />
+            <div className="top-buttons">
+                <Button variant="contained" color="warning" href="/donate">Donate Now</Button>
+                <Button variant="outlined" color="warning" href="/contact">Contact Us</Button>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li>
-                    <Link to={`/`}>Home</Link>
+                    <Link to={`/`}>HOME</Link>
                 </li>
                 <li>
-                    <Link to={`/history`}>History</Link>
+                    <Link to={`/history`}>HISTORY</Link>
                 </li>
                 <li>
-                    Who We Are
+                    WHO WE ARE
                 </li>
                 <li>
-                    How We Help
-                </li>
-                <li>
-                    <Link to={`contact`}>Contact Us</Link>
-                </li>
-                <li>
-                    <Link to={`donate`}>Make a Donation</Link>
+                    HOW WE HELP
                 </li>
             </ul>
         </nav>
-
+    </header>
     )
 }
 
