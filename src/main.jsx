@@ -12,7 +12,7 @@ import Contact from "./routes/Contact";
 import Home from "./routes/Home";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./index.css";
+import "./App.css";
 
 const router = createBrowserRouter([
   {

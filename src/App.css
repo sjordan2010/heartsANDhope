@@ -1,4 +1,6 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   margin: 0;
@@ -15,7 +17,7 @@
 
 html {
   height: 100%;
-  background-image: linear-gradient(180deg, rgba(133,0,1,1) 0%, rgba(213,134,135,1) 100%);
+  background-image: linear-gradient(to right top, #fff3fa, #f9f0f7, #f3eef4, #eeebf0, #e9e8eb, #eae9eb, #eaeaeb, #ebebeb, #f0f0f0, #f5f5f5, #fafafa, #ffffff);
   background-attachment: fixed;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -26,34 +28,60 @@ header {
   min-width: 775px;
 }
 
-nav {
+#header-logo {
+  height: 150px;
+}
+
+/* nav {
   margin: auto;
   width: 90%;
   min-width: 775px;
   display: flex;
   justify-content: center;
-  background-color: rgba(195, 195, 195, .25);
-  margin-top: 1.5rem;
+  background: linear-gradient(320deg, rgba(133,0,1,1) 0%, rgba(213,134,135,1) 100%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 4px;
+} */
+
+.navbar {
+  background: linear-gradient(320deg, rgba(133,0,1,1) 0%, rgba(213,134,135,1) 100%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  height: 5rem;
 }
 
-nav ul {
+/* nav ul {
   display: flex;
   justify-content: space-between;
   width: 50%;
+  min-width: 450px;
   list-style: none;
   margin: 2rem;
+} */
+
+.listitem1 {
+  width: 175px;
 }
 
-nav ul li {
+.listitem2 {
+  width: 185px;
+}
+
+/* nav ul li {
   color: white;
 }
 
 nav ul a {
   text-decoration: none;
   color: white;
-}
+} */
 
-nav ul a:hover {
+ul a:hover {
   text-decoration: underline;
 }
 
@@ -66,16 +94,33 @@ nav ul a:hover {
   width: 80vw;
   min-width: 775px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -2rem;
 }
 
 .top-buttons {
   display: flex;
   gap: 1.5rem;
+  max-height: 2.5rem;
 }
 
 .main-container {
   min-height: calc(100vh - 100px);
+  /* margin: auto; */
+  /* min-width: 775px; */
+  /* border-radius: 4px; */
+  /* justify-content: center;
+  display: flex; */
+  width: 100%;
+}
+
+.mainhome {
+  background-color: rgba(144, 144, 144, .25);
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 4px;
+  padding: 2rem;
 }
 
 .footer--pin {
@@ -87,3 +132,24 @@ nav ul a:hover {
   left: 0;
   bottom: 0;
 }
+
+.footer-logo {
+  height: 100px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+}
+/* 
+.footer1 {
+  background-color: red;
+}
+.footer2 {
+  background-color: blue;
+} */
