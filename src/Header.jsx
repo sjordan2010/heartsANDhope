@@ -13,7 +13,7 @@ function Header() {
         <div className='pageTop'>
             <Link to="/"><img id="header-logo" src={Logo} alt="logo" /></Link>
             <div className="top-buttons">
-                <Button variant="contained" color="warning" href="/donate">Donate Now</Button>
+                <Button style={{minWidth: "fit"}} variant="contained" color="warning" href="/donate">Donate Now</Button>
                 <Button variant="outlined" color="warning" href="/contact">Contact Us</Button>
             </div>
         </div>

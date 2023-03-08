@@ -8,7 +8,10 @@ function Footer() {
     <footer className="footer p-10 text-black flex-between">
       <div className="footer1">
         <img src={Logo} className="footer-logo"/>
-        <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
+        <address>Hearts and Hope Foundation Inc. <br></br>
+          P.O. Box 596 <br></br>
+          Terrell, NC 28682
+        </address>
       </div> 
       <div className="footer2">
         <span className="footer-title">Connect on Facebook</span>
